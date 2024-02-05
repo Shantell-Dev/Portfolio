@@ -14,6 +14,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -29,6 +30,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -36,63 +38,60 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/Cv pic.jpg" alt="Shantell Makwiranzou profile picture" />
+        <img src="./assets/profile-pic.jpg" alt="Shantell Makwiranzou profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Shantell Makwiranzou</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
+        <p class="section__text__p2">Frontend Developer</p>
         <div class="btn-container">
           <button
-          class="btn btn-color-2"
-          onclick="window.open('./assets/Resume.pdf')"
-        >
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
         Download Resume
       </button>
       <button class="btn btn-color-1" onclick="location.href='./#contact'">
         Contact Info
       </button>
-      <div id="socials-container">
-        <img
+    </div>
+    <div id="socials-container">
+      <img
         src="./assets/linkedin.png"
         alt="My LinkedIn profile"
         class="icon"
-        onclick="location.href='//https://www.linkedin.com/in/shantell-makwiranzou-28b5b6246?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwGAarxAWRxqDDHKqr8J3iw%3D%3D/'"
+        onclick='//https://www.linkedin.com/in/shantell-makwiranzou-28b5b6246?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwGAarxAWRxqDDHKqr8J3iw%3D%3D/'"
       />
       <img
-        src="./assets/github.png"
-        alt="My Github profile"
-        class="icon"
-        onclick="location.href='https://Github-Shantell-Dev/'"
+      src="./assets/github.png"
+      alt="My Github profile"
+      class="icon"
+      onclick="location.href='https://Github-Shantell-Dev/'"
       />
-      </div>
-      </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img
-          src="./assets/about-pic.png"
-          alt="Profile picture"
-          class="about-pic"
-        />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img
-              src="./assets/experience.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <h3>Experience</h3>
-            <p> 3 months <br />FullStack Development</p>
-          </div>
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img
+            src="./assets/experience.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <h3>Experience</h3>
+          <p>4 months <br />Frontend Development</p>
         </div>
-        <div class="text-container">
-          <p>
+        <div class="details-container">
+          <img
+            src="./assets/education.png"
+            alt="Education icon"
+            class="icon"
+          />
+          <h3>Education</h3>
+          <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
             With a background in service, I'm enthusiastically transitioning into web development, drawn by its dynamic nature and the opportunity to create innovative digital solutions. Equipped with skills in communication, problem-solving, and a commitment to client satisfaction, I'm eager to apply these qualities to my new career path. Fueled by curiosity and a passion for learning, I'm building a foundation in HTML, CSS, and JavaScript, with a desire to expand my coding expertise. I see web development as a perfect blend of creativity and logic, where I can merge my service-oriented mindset with technical skills to craft impactful websites and applications. Dedicated to embracing challenges and adapting to new technologies, I'm excited to contribute to projects that enhance user experiences online. My diverse background instills in me empathy and an understanding of user needs, assets I aim to leverage in this transformative journey. I'm eager to collaborate with professionals, learn from mentors, and contribute to the web development community, driven by a determination to innovate and shape the digital future.
           </p>
         </div>
@@ -152,12 +151,29 @@
                 alt="Experience icon"
                 class="icon"
               />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
             </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+            
           </div>
         </div>
         <div class="details-container">
-          <h2 class="experience-sub-title">Backend Development</h2>
+          <h2 class="experience-sub-title">Frontend Development</h2>
           <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
               <div>
                 <h3>Node JS</h3>
                 <p>Intermediate</p>
@@ -181,7 +197,7 @@
                 class="icon"
               />
               <div>
-                <h3>ReactJS</h3>
+                <h3>React JS</h3>
                 <p>Intermediate</p>
               </div>
             </article>
@@ -192,16 +208,9 @@
                 class="icon"
               />
               <div>
-                <h3>MongoDB</h3>
+                <h3>Git</h3>
                 <p>Intermediate</p>
               </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
             </article>
           </div>
         </div>
@@ -310,7 +319,7 @@
           alt="Email icon"
           class="icon contact-icon email-icon"
         />
-        <p><a href="mailto:examplemail@gmail.com">shantelmakwiranzou@gmail.com</a></p>
+        <p><a href="shantelmakwiranzou@gmail.com">shantelmakwiranzou@gmail.com</a></p>
       </div>
       <div class="contact-info-container">
         <img
@@ -318,7 +327,7 @@
           alt="LinkedIn icon"
           class="icon contact-icon"
         />
-        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        <p><a href="https://www.linkedin.com/in/shantell-makwiranzou-28b5b6246?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwGAarxAWRxqDDHKqr8J3iw%3D%3D/">LinkedIn</a></p>
       </div>
     </div>
   </section>
@@ -338,6 +347,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-    
